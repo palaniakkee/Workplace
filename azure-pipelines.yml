@@ -31,8 +31,8 @@ stages:
             effectivePomSkip: false
             sonarQubeRunAnalysis: false
 
-        - task: SonarQubeAnalyze@5
-          
+
+        - task: SonarCloudAnalyze@1
         - task: PublishBuildArtifacts@1
           inputs:
             PathtoPublish: '$(Build.ArtifactStagingDirectory)'
